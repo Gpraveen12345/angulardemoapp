@@ -1,0 +1,17 @@
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+  <table class="table" >
+<tr *ngFor="let user of users">
+  <td>
+    {{user.id}}
+  </td>
+  <td (click)="navigateToComments(user)">{{user.title}}</td>
+  <td class="{{user.value||'glyphicon glyphicon-heart-empty'}}" aria-hidden="true"(click)="like(user)"> </td>
+ 
+</tr>
+</table></div>
+<div class="col-sm-3"></div></div>
+</div>

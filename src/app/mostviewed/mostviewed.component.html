@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+<table class="table" >
+  <tr *ngFor="let user of temp">
+    <td>
+      {{user.id}}
+    </td>
+    <td (click)="navigateToComments(user)">{{user.title}}</td>
+    <td>{{"views:"+user.count==null? 0:user.count}}</td>    
+  </tr>
+  </table></div>
+  <div class="col-sm-3"></div></div>
+  </div>
+  
